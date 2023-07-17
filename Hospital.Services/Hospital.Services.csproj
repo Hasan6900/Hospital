@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hospital.Models\Hospital.Models.csproj" />
+    <ProjectReference Include="..\Hospital.Repositories\Hospital.Repositories.csproj" />
+    <ProjectReference Include="..\Hospital.ViewModels\Hospital.ViewModels.csproj" />
+    <ProjectReference Include="..\Hospital.Web\Hospital.Web.csproj" />
+    <ProjectReference Include="..\hospitals.Utilities\hospitals.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Hospital.ViewModels">
+      <HintPath>..\Hospital.ViewModels\obj\Debug\net6.0\ref\Hospital.ViewModels.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
